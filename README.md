@@ -1,14 +1,15 @@
 # Hallpass App
 
-A mobile application built with Ionic Angular and Firebase that allows users to manage their profile, login securely, and handle user authentication.
+A mobile application built with Ionic Angular and Firebase that allows users to navigate the campus more efficiently, manage their profile, login securely, and handle user authentication.
 
 ## Features
 
+-	Real-Time Campus Navigation
 - User authentication with Firebase
 - Profile management
 - Secure login/logout functionality
-- Profile picture upload with compression
-- Course information management
+
+
 
 ## Prerequisites
 
@@ -22,7 +23,7 @@ Before running this project, make sure you have the following installed:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/wabbit12/hallpass
+git clone https://github.com/wabbit12/HallPass or your forked repository
 cd HALLPASS
 ```
 
@@ -100,5 +101,4 @@ ionic cap open ios
 ### Profile Management
 - Upload and update profile picture
 - Edit user information
-- Course details management
 - Image compression for optimal storage
