@@ -24,7 +24,7 @@ Before running this project, make sure you have the following installed:
 1. Clone the repository
 ```bash
 git clone https://github.com/wabbit12/HallPass or your forked repository
-cd HALLPASS
+cd HallPass
 ```
 
 2. Install dependencies
