@@ -1,0 +1,53 @@
+// landing.page.scss
+ion-content {
+  --background: none;
+  background-image: linear-gradient(rgba(25, 25, 50, 0.7), rgba(22, 22, 54, 0.5)), /* Darker bluish-gray gradient */
+                    url('/assets/images/csuentrance.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.landing-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Keeps content at the bottom */
+  align-items: left;
+  text-align: left;
+  padding: 24px;
+  padding-bottom: 70px;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.get-started-btn {
+  --background: #701f1f; /* Base background color */
+  --background-hover: #420f0f; /* Hover background color */
+  --border-radius: 25px;
+  --padding-start: 2.5rem;
+  --padding-end: 2.5rem;
+  font-weight: 500;
+  text-transform: none;
+  color: white; /* White text color */
+  margin-bottom: 20px; /* Added margin at the bottom */
+
+  /* Hover Effect */
+  &:hover {
+    --background: #420f0f; /* Darker background on hover */
+  }
+}

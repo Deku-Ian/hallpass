@@ -1,0 +1,144 @@
+// Gradient variables
+$maroon-gradient-start: #701f1f;
+$maroon-gradient-end: #4a1414;
+
+ion-content {
+  --background: #f4f4f4; 
+}
+
+.profile-picture-container {
+  .edit-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    ion-icon {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &:hover {
+    .edit-overlay {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+.profile-container {
+  position: relative;
+  height: 100%;
+}
+.custom-alert {
+  .alert-input {
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+  }
+}
+
+.header-gradient {
+  background: linear-gradient(to right, $maroon-gradient-start, $maroon-gradient-end);
+  height: 200px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.user-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+
+.profile-picture-container {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  margin-top: 100px;
+  padding: 0 16px;
+
+  ion-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+
+  ion-item {
+    --background: white;
+    --color: #333;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+    ion-label {
+      color: #701f1f;
+      font-weight: bold;
+    }
+
+    ion-input {
+      color: #333;
+    }
+  }
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  margin-top: 16px;
+
+  ion-button {
+    --background: #701f1f;
+    --background-hover: #4a1414;
+    --color: white;
+    text-transform: none;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .logout-button {
+    --background: #a52a2a;
+    --background-hover: #8b0000;
+  }
+}

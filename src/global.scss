@@ -1,0 +1,220 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Global styles for the header across all pages */
+/* Global styles for the header across all pages */
+ion-header {
+    --background: #701f1f; /* Dark blue background for the header */
+  }
+  
+* {
+  font-family: 'Poppins', sans-serif;
+}
+  
+  ion-toolbar {
+    --background: #701f1f; /* Dark blue background for the toolbar */
+    --color: white; /* White text for all toolbar items */
+  }
+  
+  ion-title {
+    color: white; /* White color for the title text */
+  }
+  /* Style the menu items */
+  ion-menu {
+    --background: white; /* White background for the menu */
+  }
+  /* Optionally add hover effects for menu items */
+  ion-item:hover {
+    background-color: #f0f0f0; /* Light grey hover effect */
+  }
+  
+  /* For the icon inside the menu, make sure it has the same color as the text */
+  ion-icon {
+    color: #701f1f; /* Blue icon */
+  }
+  
+  /* Optional: style the menu when it's opened */
+  ion-menu[side="end"] {
+    --background: white; /* White background on the end menu */
+  }
+  
+  /* Set the background for ion-content */
+  ion-content {
+    --background: white; /* White background for all content areas */
+    --color: #701f1f; /* Blue text for content, if needed */
+  }
+  
+  /* Ensure full page background is white */
+  ion-page {
+    --background: white; /* White background for the entire page */
+  }
+
+/* global.scss */
+ion-list {
+  --background: #ffffff !important;
+  --color: #701f1f !important;
+}
+
+ion-item {
+  --background: #ffffff;  /* White background for each item */
+  --color: #701f1f;        /* Blue text color for each item */
+}
+  
+  
+  /* Optional: Add a small margin to content for better layout */
+  ion-content {
+    padding: 10px;
+  }
+  // src/theme/variables.scss
+:root {
+  --ion-background-color: #ffffff; /* Global background color */
+  --ion-item-background: #ffffff; /* Global item background color */
+  --ion-item-color: #701f1f; /* Global item text color */
+}
+/* For ion-list background and text */
+ion-list::part(native) {
+  background-color: #ffffff !important;  /* White background */
+  color: #0000ff !important;             /* Blue text color */
+}
+
+/* For ion-item styling */
+ion-item::part(native) {
+  background-color: #ffffff !important;  /* White background */
+  color: #701f1f !important;             /* Blue text color */
+}
+
+/* For ion-icon color */
+ion-icon::part(native) {
+  color: #701f1f !important;             /* Blue icon color */
+}
+
+/* For ion-label text color */
+ion-label::part(native) {
+  color: #701f1f !important;             /* Blue label color */
+}
+/* Global Style for the Bottom Navbar (ion-footer) */
+ion-footer {
+  background-color: #701f1f; /* Maroon background */
+}
+
+ion-tab-bar {
+  --background: #701f1f; /* Maroon background for the tab bar */
+  --color: white;        /* White color for icons when inactive */
+}
+
+ion-tab-button {
+  --color: white;          /* White icons for inactive tabs */
+  --background: transparent; /* Transparent background for inactive tabs */
+  transition: background-color 0.3s ease;
+}
+
+/* Active (Selected) State for Bottom Navbar */
+ion-tab-button.selected {
+  --background: #ffffff; /* White background for selected tab */
+  --color: #701f1f;       /* Maroon color for the selected icon */
+  background: rgba(255, 255, 255, 0.2); /* Optional: Light background effect */
+}
+
+/* Hover Effect for Tabs */
+ion-tab-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background effect on hover */
+}
+
+/* For ion-icon inside the tab buttons */
+ion-icon {
+  color: white; /* White color for the icons */
+}
+
+/* Optional: Add active icon color for the selected tab */
+ion-tab-button.selected ion-icon {
+  color: #701f1f; /* Maroon icon color for the selected tab */
+}
+
+
+ion-button.selected {
+  --background: #ffffff; /* White background for selected tab */
+  --color: #701f1f;       /* Maroon color for the selected icon */
+  background: rgba(255, 255, 255, 0.2); /* Optional: Light background effect */
+}
+
+:root {
+  --ion-color-primary: #ffffff; /* Maroon color */
+  
+}
+
+/* Override the active state color for the bottom navbar */
+ion-tab-button.active {
+  --background: #701f1f; /* Maroon background for active state */
+  --color: white; /* White text/icon color */
+}
+
+/* Specifically change the icon color when active */
+ion-tab-button.active ion-icon {
+  color: #701f1f; /* Maroon icon color when active */
+}
+/* global.scss */
+:root {
+  --ion-item-background: #ffffff !important; /* White background for all ion-items */
+}
+
+:root {
+  --ion-icon-color: #FF5733; /* Set default color */
+}
+.custom-color {
+  --ion-icon-color: #FF5733; /* Set custom color */
+}
+:root {
+  --ion-icon-color-default: white;
+  --ion-icon-color-active: maroon;
+  --ion-card-background: #ffffff;
+}
+:root.md{
+  --ion-card-background: #ffffff !important;
+  --ion-background-color: #ffffff;
+  --ion-text-color: #701f1f;
+}
+.alert-button-inner.sc-ion-alert-md {
+  color: #701f1f;
+}
+/* map.page.scss */
+
+/* Customizing the overall .leaflet-bar container */
+
+
+/* Custom style for the zoom control button icons */

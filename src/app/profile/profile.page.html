@@ -1,0 +1,55 @@
+<ion-content>
+  <div class="profile-container">
+    <!-- Gradient Half Circle Header -->
+    <div class="header-gradient">
+      <h1 class="user-name">{{ userName }}</h1>
+    </div>
+
+    <div class="profile-picture-container">
+      <img [src]="profileImageUrl" alt="Profile Picture" class="profile-picture">
+      <div class="edit-overlay">
+        <label for="profile-pic-input" class="upload-label">
+          <ion-icon name="camera"></ion-icon>
+          <span>Change Photo</span>
+        </label>
+        <input 
+          type="file" 
+          id="profile-pic-input"
+          accept="image/*"
+          (change)="uploadProfilePicture($event)"
+          style="display: none;">
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="stacked">Name</ion-label>
+            <ion-input [value]="userName" readonly></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Course</ion-label>
+            <ion-input [value]="userCourse" readonly></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Email</ion-label>
+            <ion-input [value]="userEmail" readonly></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Password</ion-label>
+            <ion-input type="password" value="********" readonly></ion-input>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="profile-buttons">
+      <ion-button expand="block" (click)="editProfile()">Edit Profile</ion-button>
+      <ion-button expand="block" class="logout-button" (click)="logout()">Logout</ion-button>
+    </div>
+  </div>
+</ion-content>

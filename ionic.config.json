@@ -1,0 +1,7 @@
+{
+  "name": "HallPass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
