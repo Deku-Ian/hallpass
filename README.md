@@ -50,8 +50,6 @@ export const environment = {
 };
 ```
 
-Contact the project maintainer for the required Firebase credentials.
-
 ## Running the App
 
 ### Development server
