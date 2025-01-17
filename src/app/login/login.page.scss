@@ -1,10 +1,9 @@
-/* Override default text color for the login page */
 ion-content {
     --background: linear-gradient(90deg, rgba(121, 8, 8, 0.767), rgba(58, 4, 4, 0.945)),
     url("/assets/bg.jpg") no-repeat center center / cover;
-    background-size: cover; /* Ensure the image covers the whole area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .login-section {

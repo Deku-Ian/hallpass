@@ -1,6 +1,6 @@
-# Hallpass App
+# HallPass App
 
-A mobile application built with Ionic Angular and Firebase that allows users to navigate the campus more efficiently, manage their profile, login securely, and handle user authentication.
+A mobile application built with Ionic Angular and Firebase that allows users to navigate the campus more efficiently, manage their profile, login securely, and handle user authentication. In partial fulfillment for our subject CS 414-B (Mobile Computing 2).
 
 ## Features
 
@@ -92,6 +92,9 @@ ionic cap open ios
 ```
 
 ## Features in Detail
+
+### Authentication
+- Realtime Campus Navigation
 
 ### Authentication
 - Email/password login
